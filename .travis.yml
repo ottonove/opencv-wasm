@@ -21,4 +21,7 @@ install:
   - cd ..
 
 script:
+  - cd ./utils/opencv/build_wasm/bin
+  - node tests.js
+  - cd ../../../../
   - npm test
