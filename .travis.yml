@@ -17,7 +17,7 @@ os:
 install:
   - npm install
   - (cd ./utils && sh ./build.sh)
-  - (cd ./opencv/build_wasm/bin && npm install)
+  - (cd ./utils/opencv/build_wasm/bin && npm install)
 
 script:
   - (cd ./utils/opencv/build_wasm/bin && node tests.js)
