@@ -18,10 +18,6 @@ cd opencv/build_wasm/bin
 # beautify opencv.js using js-beautify
 npx js-beautify opencv.js -r
 
-# Test using built in test
-npm install
-node tests.js # make sure 0 failed
-
 # copy results to root
 cd ../../..
 cp ./opencv/build_wasm/bin/opencv.wasm ../opencv.wasm
