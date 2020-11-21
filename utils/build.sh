@@ -7,8 +7,6 @@ docker run --rm --workdir /code -v "$PWD":/code "trzeci/emscripten:sdk-tag-1.38.
 
 # Backup the default build_wasm resukt
 cp -a ./build_wasm/ ./build_wasm_backup
-find ./build_wasm/ -type d -exec chmod 755 {} \;
-find ./build_wasm/ -type f -exec chmod 644 {} \;
 
 # separate wasm
 cd ../
