@@ -21,6 +21,7 @@ install:
   - (cp ./utils/opencv/build_wasm/bin/opencv.wasm ./opencv.wasm)
   - (cp ./utils/opencv/build_wasm/bin/opencv.js ./opencv.js)
   - (cp -r ./utils/opencv/build_wasm/ ./build_wasm_test)
+  - (chmod 775 -R ./build_wasm_test)
   - (cd ./build_wasm_test/bin && npm install)
 
 script:
