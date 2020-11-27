@@ -18,7 +18,8 @@ install:
   - npm install
 
   - cd ./utils
-  - sh ./build.sh
+  - chmod 755 ./build.sh
+  - bash ./build.sh
   - cd ..
 
   - cp ./utils/opencv/build_wasm/bin/opencv.wasm ./opencv.wasm
