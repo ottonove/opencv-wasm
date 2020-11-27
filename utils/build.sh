@@ -15,6 +15,7 @@ cd ..
 
 
 # SEPARATE WASM
+chmod -R 755 ./opencv/build_wasm/bin
 node seperateBinaryFile.js
 
 
