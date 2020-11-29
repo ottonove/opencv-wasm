@@ -1,5 +1,4 @@
 git clone --branch 4.3.0 --depth 1 https://github.com/opencv/opencv.git
-chmod -R 755 ./opencv
 
 # BUILD
 cd opencv
