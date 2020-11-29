@@ -37,8 +37,5 @@ install:
   - cd ../..
 
 script:
-  - cd ./build_wasm_test/bin
-  - node tests.js
-  - cd ..
-
+  - (cd ./build_wasm_test/bin && node tests.js)
   - npm test
