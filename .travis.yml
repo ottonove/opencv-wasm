@@ -18,14 +18,14 @@ install:
   - npm install
 
   - cd ./utils
-  - chmod 755 ./build.sh
+  # - chmod 755 ./build.sh
   - bash ./build.sh
   - cp -a ./opencv/build_wasm/ ./build_wasm
-  - chmod -R 755 ./build_wasm
+  # - chmod -R 755 ./build_wasm
   - node seperateBinaryFile.js
   - cd ./build_wasm/bin
   - npx js-beautify opencv.js -r
-  - cd ../../..
+  - cd ../..
   - cd ..
 
   - cp ./utils/build_wasm/bin/opencv.wasm ./opencv.wasm
